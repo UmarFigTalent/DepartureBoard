@@ -26,13 +26,13 @@
 window.DEPARTURE_CONFIG = {
 
   // --- Your Travelpayouts credentials ---
-  marker:    "YOUR_MARKER_HERE",        // affiliate ID (number)
+  marker:    "739173",        // affiliate ID (number)
   apiToken:  "YOUR_API_TOKEN_HERE",     // used by the proxy only
 
   // --- Where your serverless proxy lives ---
   // Leave "" to use demo data. Set to e.g.
   // "https://your-site.vercel.app/api/deals" once deployed.
-  proxyUrl: "",
+  proxyUrl: "https://departure-board-tau.vercel.app/api/deals",
 
   // --- Home market ---
   defaultOrigin: "LON",                 // IATA city code for London
