@@ -36,26 +36,55 @@
       <div class="search" role="search">
         <div class="search__field">
           <label for="origin">From</label>
-          <input id="origin" type="text" value="London (any)" autocomplete="off" />
+          <select id="origin" autocomplete="off">
+            <option value="LON">London (any)</option>
+            <option value="MAN">Manchester</option>
+            <option value="EDI">Edinburgh</option>
+            <option value="BHX">Birmingham</option>
+            <option value="GLA">Glasgow</option>
+            <option value="BRS">Bristol</option>
+            <option value="NCL">Newcastle</option>
+            <option value="LPL">Liverpool</option>
+          </select>
         </div>
         <div class="search__field">
           <label for="dest">To</label>
           <input id="dest" type="text" placeholder="Anywhere" autocomplete="off" />
         </div>
         <div class="search__field search__field--month">
-          <label for="month">When</label>
-          <input id="month" type="month" />
+          <label for="maxprice">Max £</label>
+          <input id="maxprice" type="number" placeholder="Any" min="0" step="10" autocomplete="off" />
         </div>
         <button class="search__go" id="searchBtn">Find deals</button>
       </div>
 
       <div class="chips" aria-label="Quick searches">
         <span class="chips__label">Explore everywhere:</span>
-        <button class="chip" data-dest="">🌍 Anywhere</button>
-        <button class="chip" data-dest="barcelona">Beach &amp; sun</button>
-        <button class="chip" data-dest="krakow">Under £30</button>
-        <button class="chip" data-dest="marrakesh">City breaks</button>
-        <button class="chip" data-dest="algarve">Package holidays</button>
+        <button class="chip" data-filter="all">🌍 Anywhere</button>
+        <button class="chip" data-filter="under30">Under £30</button>
+        <button class="chip" data-filter="under50">Under £50</button>
+        <button class="chip" data-filter="direct">Direct only</button>
+        <button class="chip" data-filter="packages">Package holidays</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="how">
+    <div class="wrap how__grid">
+      <div class="how__item">
+        <span class="how__num">1</span>
+        <h3>We watch every fare</h3>
+        <p>Prices are pulled live from the same networks the big sites use — refreshed around the clock, ranked cheapest first.</p>
+      </div>
+      <div class="how__item">
+        <span class="how__num">2</span>
+        <h3>You grab the deal</h3>
+        <p>Tap any deal and you go straight to the airline or hotel to book. We never see your card — you book with them directly.</p>
+      </div>
+      <div class="how__item">
+        <span class="how__num">3</span>
+        <h3>It costs you nothing</h3>
+        <p>We earn a small commission from the travel site when you book — never a penny extra for you. That's how we keep the lights on.</p>
       </div>
     </div>
   </section>
